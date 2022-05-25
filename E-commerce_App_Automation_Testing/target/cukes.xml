@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="3" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="16" time="207.522">
+<testcase classname="user should be able to create account" name="user could register with valid data successfully" time="15.371">
+<system-out><![CDATA[Given user Navigate to url..................................................passed
+And user Click on Register Tab..............................................passed
+When Click on any Gender Option.............................................passed
+And Fill First Name.........................................................passed
+And Fill Last Name..........................................................passed
+And Select Day..............................................................passed
+And Select Month............................................................passed
+And Select Year.............................................................passed
+And Enter email address.....................................................passed
+And Enter any company name..................................................passed
+And Enter any password......................................................passed
+And Enter same password in Confirm password field...........................passed
+And Click on REGISTER button................................................passed
+Then Success message is displayed Your registration completed...............passed
+And the color of this message is green......................................passed
+]]></system-out>
+</testcase>
+<testcase classname="user should be able to log in to their account" name="User could log in with valid email and password successfully" time="11.62">
+<system-out><![CDATA[Given user Navigate to website url..........................................passed
+And user Click on Login Tab.................................................passed
+When Enter valid "ABCD@example.com" and "Pass123456"........................passed
+And Click on LOG IN button..................................................passed
+Then website opens..........................................................passed
+And My account tab isDisplayed..............................................passed
+]]></system-out>
+</testcase>
+<testcase classname="guest user could switch between currencies $_€" name="user could switch between currencies $-€" time="7.62">
+<system-out><![CDATA[Given user Navigate to The url..............................................passed
+When user switch currencies to "Euro".......................................passed
+Then Products display salary with Euro......................................passed
+]]></system-out>
+</testcase>
+<testcase classname="user could hover categories and select different category" name="user could hover categories" time="21.191">
+<system-out><![CDATA[Given user navigate2 to url.................................................passed
+And user Click on Login Tab hover...........................................passed
+And hover Enter valid "ABCD@example.com" and "Pass123456"...................passed
+Given hover My account tab isDisplayed......................................passed
+When user hover category and select subcategory.............................passed
+Then verify hover the result................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="users will be able to search for products with different parameters" name="user could search using product name" time="6.688">
+<system-out><![CDATA[Given user navigate to url..................................................passed
+Given click on search field.................................................passed
+When search for any product name like "Apple"...............................passed
+And Click on Search Button..................................................passed
+Then verify the result......................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="users will be able to search for products with different parameters" name="user could search using serial number of the product" time="6.679">
+<system-out><![CDATA[Given user navigate to url..................................................passed
+Given click on search field.................................................passed
+When search for any product SKU like "AS_551_LP"............................passed
+And Click on Search Button..................................................passed
+Then verify the result......................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="users will be able to open sliders in home page" name="first slider is clickable on home page" time="18.395">
+<failure message="element click intercepted: Element &lt;a href=&quot;http://demo.nopcommerce.com/&quot; aria-label=&quot;&quot; class=&quot;nivo-imageLink&quot; style=&quot;display: block;&quot;&gt;...&lt;/a&gt; is not clickable at point (951, 498). Other element would receive the click: &lt;a href=&quot;http://demo.nopcommerce.com/&quot; aria-label=&quot;&quot; class=&quot;nivo-imageLink&quot; style=&quot;display: block;&quot;&gt;...&lt;/a&gt;&#10;  (Session info: chrome=101.0.4951.67)&#10;Build info: version: '4.1.4', revision: '535d840ee2'&#10;System info: host: 'LAPTOP-SGIBJ7ML', ip: '192.168.1.102', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_333'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [a072661b431064c0c4511e3fae488abf, clickElement {id=88e4cd38-0360-47c1-b379-a459b3a26769}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.67, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: C:\Users\sahar\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:63281}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:63281/devtoo..., se:cdpVersion: 101.0.4951.67, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Element: [[ChromeDriver: chrome on WINDOWS (a072661b431064c0c4511e3fae488abf)] -&gt; xpath: //a[@href=&quot;http://demo.nopcommerce.com/&quot;][1]]&#10;Session ID: a072661b431064c0c4511e3fae488abf" type="org.openqa.selenium.ElementClickInterceptedException"><![CDATA[Given user navigate slider to url...........................................passed
+And slider user Click on Login Tab..........................................passed
+And slider Enter valid "ABCD@example.com" and "Pass123456"..................passed
+Given slider My account tab isDisplayed.....................................passed
+When user click on first slider.............................................failed
+Then verify clicking on home slider1 result.................................skipped
+
+StackTrace:
+org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <a href="http://demo.nopcommerce.com/" aria-label="" class="nivo-imageLink" style="display: block;">...</a> is not clickable at point (951, 498). Other element would receive the click: <a href="http://demo.nopcommerce.com/" aria-label="" class="nivo-imageLink" style="display: block;">...</a>
+  (Session info: chrome=101.0.4951.67)
+Build info: version: '4.1.4', revision: '535d840ee2'
+System info: host: 'LAPTOP-SGIBJ7ML', ip: '192.168.1.102', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_333'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [a072661b431064c0c4511e3fae488abf, clickElement {id=88e4cd38-0360-47c1-b379-a459b3a26769}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.67, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: C:\Users\sahar\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:63281}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:63281/devtoo..., se:cdpVersion: 101.0.4951.67, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (a072661b431064c0c4511e3fae488abf)] -> xpath: //a[@href="http://demo.nopcommerce.com/"][1]]
+Session ID: a072661b431064c0c4511e3fae488abf
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:567)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:251)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at org.example.StepDefinition.SD06_SliderWrapper.first_slider(SD06_SliderWrapper.java:52)
+	at ✽.user click on first slider(file:///D:/01%20Sahar/01%20Sahar%20Files/02%20Courses/FWD/Front%20End%20Testing%20Nanodegree%20Program/Project%202%20E-commerce%20App%20Automation%20Testing/Full%20Project/E-commerce_App_Automation_Testing/src/main/resources/Features/F06_SliderWrapper.feature:17)
+]]></failure>
+</testcase>
+<testcase classname="users will be able to open sliders in home page" name="second slider is clickable on home page" time="19.726">
+<failure message="expected [true] but found [false]" type="java.lang.AssertionError"><![CDATA[Given user navigate slider to url...........................................passed
+And slider user Click on Login Tab..........................................passed
+And slider Enter valid "ABCD@example.com" and "Pass123456"..................passed
+Given slider My account tab isDisplayed.....................................passed
+When user click on second slider............................................passed
+Then verify clicking on home slider2 result.................................failed
+
+StackTrace:
+java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1413)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+	at org.testng.Assert.assertEquals(Assert.java:131)
+	at org.testng.Assert.assertEquals(Assert.java:976)
+	at org.testng.Assert.assertEquals(Assert.java:1010)
+	at org.example.StepDefinition.SD06_SliderWrapper.slider2_result(SD06_SliderWrapper.java:85)
+	at ✽.verify clicking on home slider2 result(file:///D:/01%20Sahar/01%20Sahar%20Files/02%20Courses/FWD/Front%20End%20Testing%20Nanodegree%20Program/Project%202%20E-commerce%20App%20Automation%20Testing/Full%20Project/E-commerce_App_Automation_Testing/src/main/resources/Features/F06_SliderWrapper.feature:24)
+]]></failure>
+</testcase>
+<testcase classname="users could open followUs links" name="user opens facebook link" time="9.027">
+<system-out><![CDATA[Given user navigate followUs to url.........................................passed
+When user click on facebook Icon............................................passed
+Then verify that facebook url opened........................................passed
+]]></system-out>
+</testcase>
+<testcase classname="users could open followUs links" name="user opens twitter link" time="8.861">
+<system-out><![CDATA[Given user navigate followUs to url.........................................passed
+When user click on twitter Icon.............................................passed
+Then verify that twitter url opened.........................................passed
+]]></system-out>
+</testcase>
+<testcase classname="users could open followUs links" name="user opens rss link" time="8.386">
+<failure message="expected [https://demo.nopcommerce.com/new-online-store-is-open] but found [https://demo.nopcommerce.com/news/rss/1]" type="java.lang.AssertionError"><![CDATA[Given user navigate followUs to url.........................................passed
+When user click on rss Icon.................................................passed
+Then verify that rss url opened.............................................failed
+
+StackTrace:
+java.lang.AssertionError: expected [https://demo.nopcommerce.com/new-online-store-is-open] but found [https://demo.nopcommerce.com/news/rss/1]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1413)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+	at org.testng.Assert.assertEquals(Assert.java:131)
+	at org.testng.Assert.assertEquals(Assert.java:655)
+	at org.testng.Assert.assertEquals(Assert.java:665)
+	at org.example.StepDefinition.SD07_followUs.rss_url_result(SD07_followUs.java:131)
+	at ✽.verify that rss url opened(file:///D:/01%20Sahar/01%20Sahar%20Files/02%20Courses/FWD/Front%20End%20Testing%20Nanodegree%20Program/Project%202%20E-commerce%20App%20Automation%20Testing/Full%20Project/E-commerce_App_Automation_Testing/src/main/resources/Features/F07_FollowUs.feature:23)
+]]></failure>
+</testcase>
+<testcase classname="users could open followUs links" name="user opens youtube link" time="10.62">
+<system-out><![CDATA[Given user navigate followUs to url.........................................passed
+When user click on youtube Icon.............................................passed
+Then verify that youtube url opened.........................................passed
+]]></system-out>
+</testcase>
+<testcase classname="users could add items to wish List" name="user add products to wishList" time="10.861">
+<system-out><![CDATA[Given user navigate wishList to url.........................................passed
+When user click on product "2" wishList Icon................................passed
+Then wishList notification msg of success is visible........................passed
+And the number of wishList items increased..................................passed
+]]></system-out>
+</testcase>
+<testcase classname="users could add items to wish List" name="added products are displayed on wishList page" time="12.851">
+<system-out><![CDATA[Given user navigate wishList to url.........................................passed
+When user click on product "2" wishList Icon................................passed
+Then wishList notification msg of success is visible........................passed
+And the number of wishList items increased..................................passed
+And user go to wishlist page................................................passed
+Then number of quantities are greater than zero in wishlist page............passed
+]]></system-out>
+</testcase>
+<testcase classname="users could add items to Shopping Cart" name="user add products to Shopping Cart by button" time="18.268">
+<system-out><![CDATA[Given user navigate Cart to url.............................................passed
+And Cart user Click on Login Tab............................................passed
+And Cart Enter valid "ABCD@example.com" and "Pass123456"....................passed
+Given Cart My account tab isDisplayed.......................................passed
+When user click on product "2" Add to Cart Button...........................passed
+Then Shopping Cart notification msg of success is visible...................passed
+And the number of Shopping Cart items increased.............................passed
+]]></system-out>
+</testcase>
+<testcase classname="users could add items to Shopping Cart" name="added products are displayed on Shopping Cart page" time="20.65">
+<system-out><![CDATA[Given user navigate Cart to url.............................................passed
+And Cart user Click on Login Tab............................................passed
+And Cart Enter valid "ABCD@example.com" and "Pass123456"....................passed
+Given Cart My account tab isDisplayed.......................................passed
+When user click on product "2" Add to Cart Button...........................passed
+Then Shopping Cart notification msg of success is visible...................passed
+And the number of Shopping Cart items increased.............................passed
+And user go to Shopping Cart page...........................................passed
+Then quantity greater than 0................................................passed
+And item exist in the shopping cart.........................................passed
+]]></system-out>
+</testcase>
+</testsuite>

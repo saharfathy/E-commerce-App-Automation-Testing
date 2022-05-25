@@ -1,0 +1,22 @@
+-------------------------------------------------------------------------------
+Test set: org.example.TestRunner.TestRunner
+-------------------------------------------------------------------------------
+Tests run: 16, Failures: 3, Errors: 0, Skipped: 0, Time elapsed: 209.221 s <<< FAILURE! - in org.example.TestRunner.TestRunner
+runScenario(org.example.TestRunner.TestRunner)  Time elapsed: 18.4 s  <<< FAILURE!
+org.openqa.selenium.ElementClickInterceptedException: 
+element click intercepted: Element <a href="http://demo.nopcommerce.com/" aria-label="" class="nivo-imageLink" style="display: block;">...</a> is not clickable at point (951, 498). Other element would receive the click: <a href="http://demo.nopcommerce.com/" aria-label="" class="nivo-imageLink" style="display: block;">...</a>
+  (Session info: chrome=101.0.4951.67)
+Build info: version: '4.1.4', revision: '535d840ee2'
+System info: host: 'LAPTOP-SGIBJ7ML', ip: '192.168.1.102', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_333'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [a072661b431064c0c4511e3fae488abf, clickElement {id=88e4cd38-0360-47c1-b379-a459b3a26769}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.67, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: C:\Users\sahar\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:63281}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:63281/devtoo..., se:cdpVersion: 101.0.4951.67, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (a072661b431064c0c4511e3fae488abf)] -> xpath: //a[@href="http://demo.nopcommerce.com/"][1]]
+Session ID: a072661b431064c0c4511e3fae488abf
+
+runScenario(org.example.TestRunner.TestRunner)  Time elapsed: 19.836 s  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+
+runScenario(org.example.TestRunner.TestRunner)  Time elapsed: 8.395 s  <<< FAILURE!
+java.lang.AssertionError: expected [https://demo.nopcommerce.com/new-online-store-is-open] but found [https://demo.nopcommerce.com/news/rss/1]
+
