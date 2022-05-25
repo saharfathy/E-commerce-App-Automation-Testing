@@ -48,7 +48,7 @@ public class SD06_SliderWrapper {
 
     @When("user click on first slider")
     public void first_slider() throws InterruptedException {
-        Thread.sleep(2000);
+        Thread.sleep(3000);
         homeSlider.sliders("1").click();
     }
 
