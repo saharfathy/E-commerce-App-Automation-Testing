@@ -11,4 +11,4 @@
 # SC8- Users could add items to wish List
 # SC9- Users could add items to Shopping Cart
 #**Note**
-# there is Failed test scenrios in this project
+# there is 3 Failed test scenrios in this project
